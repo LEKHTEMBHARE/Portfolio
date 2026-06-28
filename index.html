@@ -1,333 +1,442 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Premium developer portfolio of Lekh Tembhare — AI Engineer and Full Stack Developer." />
-    <title>Lekh Tembhare | Premium Developer Portfolio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div class="cursor-glow"></div>
-    <div class="scroll-progress"></div>
-    <div class="aurora"></div>
+<html lang="en" class="lenis lenis-smooth">
 
-    <header class="topbar">
-      <a class="brand" href="#hero">
-        <span class="brand-mark"></span>
-        <span>Lekh Tembhare</span>
-      </a>
-      <nav class="nav-links">
-        <a href="#about">About</a>
-        <a href="#experience">Experience</a>
-        <a href="#projects">Projects</a>
-        <a href="#skills">Skills</a>
-        <a href="#contact">Contact</a>
-      </nav>
-      <a class="nav-cta" href="#contact">Let’s talk</a>
-    </header>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lekh Tembhare | Premium Developer Portfolio</title>
+    <meta name="description" content="Portfolio of Lekh Tembhare - Full Stack Developer">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Sora:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Background Elements -->
+    <div class="fixed-bg">
+        <div class="glow-orb orb-1"></div>
+        <div class="glow-orb orb-2"></div>
+        <div class="noise-overlay"></div>
+    </div>
+
+    <!-- Custom Cursor -->
+    <div class="custom-cursor"></div>
+    <div class="custom-cursor-follower"></div>
+
+    <!-- Navigation -->
+    <nav class="glass-nav">
+        <div class="nav-container">
+            <a href="#home" class="logo">Lekh<span>.</span></a>
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#codex">CodeX</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <a href="#contact" class="btn btn-primary small-btn">Let's Talk</a>
+            <!-- Mobile Menu Toggle -->
+            <button class="menu-toggle"><i class="ph ph-list"></i></button>
+        </div>
+    </nav>
 
     <main>
-      <section id="hero" class="section hero">
-        <div class="hero-content">
-          <p class="eyebrow">AI Engineer • Full Stack Developer • GDG Builder</p>
-          <h1>
-            I build <span class="typed"></span>
-          </h1>
-          <p class="hero-copy">
-            Designing luminous digital systems, product-grade interfaces, and AI-native experiences that feel as premium as they perform.
-          </p>
-          <div class="hero-actions">
-            <a class="btn btn-primary" href="#projects">View flagship work</a>
-            <a class="btn btn-secondary" href="#contact">Book a conversation</a>
-          </div>
-          <div class="hero-metrics">
-            <div class="metric-card tilt-card">
-              <strong>20+</strong>
-              <span>Hackathons</span>
+        <!-- Home / Hero Section -->
+        <section id="home" class="hero-section">
+            <div class="hero-content">
+                <div class="badge glass-badge"><span class="wave">👋</span> Hello, I'm</div>
+                <h1 class="hero-title reveal-text">Lekh <span class="gradient-text">Tembhare</span></h1>
+                <div class="hero-roles">
+                    <span class="role">Full Stack Developer</span>
+                </div>
+                <p class="hero-desc reveal-text-delay">
+                    Motivated and passionate Full Stack Developer with experience in building real-world projects and
+                    participating in hackathons. Passionate about solving real-world problems and continuously learning
+                    new technologies.
+                </p>
+                <div class="hero-actions">
+                    <a href="#projects" class="btn btn-primary magnetic"><i class="ph ph-rocket-launch"></i> View
+                        Projects</a>
+                    <a href="#" class="btn btn-outline magnetic"><i class="ph ph-download-simple"></i> Download
+                        Resume</a>
+                </div>
             </div>
-            <div class="metric-card tilt-card">
-              <strong>8+</strong>
-              <span>Years of craft</span>
+            <div class="hero-3d-container">
+                <canvas id="hero-canvas"></canvas>
             </div>
-            <div class="metric-card tilt-card">
-              <strong>100%</strong>
-              <span>Intentional details</span>
+
+            <div class="scroll-indicator">
+                <span class="scroll-text">Scroll Down</span>
+                <div class="mouse">
+                    <div class="wheel"></div>
+                </div>
             </div>
-          </div>
-        </div>
+        </section>
 
-        <div class="hero-visual" aria-hidden="true">
-          <div class="orb orb-1"></div>
-          <div class="orb orb-2"></div>
-          <div class="ring ring-1"></div>
-          <div class="ring ring-2"></div>
-          <div class="glass-card hero-panel tilt-card">
-            <div class="panel-top">
-              <span class="dot"></span>
-              <span class="dot"></span>
-              <span class="dot"></span>
+        <!-- About Section -->
+        <section id="about" class="section">
+            <div class="section-header">
+                <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+                <p class="section-subtitle">A little bit about my journey.</p>
             </div>
-            <div class="panel-body">
-              <p class="mini-label">Current focus</p>
-              <h3>AI products with cinematic UX</h3>
-              <ul>
-                <li>Generative interfaces</li>
-                <li>Full-stack systems</li>
-                <li>Visionary product design</li>
-              </ul>
+
+            <div class="about-grid">
+                <div class="about-visual glass-card" data-tilt data-tilt-max="5" data-tilt-glare
+                    data-tilt-max-glare="0.1">
+                    <div class="abstract-shape">
+                        <i class="ph ph-code" style="font-size: 80px; color: var(--accent-purple);"></i>
+                    </div>
+                </div>
+                <div class="about-content">
+                    <h3 class="about-heading">Driven by Curiosity</h3>
+                    <p class="about-text">
+                        Motivated and passionate Full Stack Developer with experience in building real-world projects
+                        and participating in hackathons. Passionate about solving real-world problems and continuously
+                        learning new technologies.
+                    </p>
+
+                    <div class="stats-grid">
+                        <div class="stat-card glass-card hover-lift">
+                            <i class="ph ph-code gradient-icon"></i>
+                            <h4 class="stat-num">20+</h4>
+                            <p class="stat-label">Hackathons</p>
+                        </div>
+                        <div class="stat-card glass-card hover-lift">
+                            <i class="ph ph-briefcase gradient-icon"></i>
+                            <h4 class="stat-num">2</h4>
+                            <p class="stat-label">Internships</p>
+                        </div>
+                        <div class="stat-card glass-card hover-lift">
+                            <i class="ph ph-folder-open gradient-icon"></i>
+                            <h4 class="stat-num">4</h4>
+                            <p class="stat-label">Real-world Projects</p>
+                        </div>
+                        <div class="stat-card glass-card hover-lift founder-card">
+                            <i class="ph ph-users-three gradient-icon"></i>
+                            <h4 class="stat-num">Team Leader</h4>
+                            <p class="stat-label">CodeX Community</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
+        </section>
 
-        <div class="scroll-indicator">
-          <span></span>
-          <p>Scroll to explore</p>
-        </div>
-      </section>
-
-      <section id="about" class="section">
-        <div class="section-heading">
-          <p class="eyebrow">About</p>
-          <h2>Premium craft with a product mindset.</h2>
-        </div>
-        <div class="about-grid">
-          <div class="about-card glass-card tilt-card">
-            <img src="assets/images/profile.svg" alt="Portrait illustration of Lekh Tembhare" />
-            <div class="about-badge">Available for ambitious teams</div>
-          </div>
-          <div class="about-card glass-card tilt-card">
-            <p>
-              I design and build high-performance digital experiences that merge elegant interfaces with robust engineering.
-              My work sits at the intersection of AI, product strategy, and handcrafted front-end systems.
-            </p>
-            <div class="about-points">
-              <div>
-                <h3>01</h3>
-                <span>AI-native product builds</span>
-              </div>
-              <div>
-                <h3>02</h3>
-                <span>Frontend systems with depth</span>
-              </div>
-              <div>
-                <h3>03</h3>
-                <span>Developer communities & talks</span>
-              </div>
+        <!-- Skills Section -->
+        <section id="skills" class="section">
+            <div class="section-header centered">
+                <h2 class="section-title">Technical <span class="gradient-text">Skills</span></h2>
+                <p class="section-subtitle">Technologies and tools I work with.</p>
             </div>
-          </div>
-        </div>
-      </section>
 
-      <section id="experience" class="section">
-        <div class="section-heading">
-          <p class="eyebrow">Experience</p>
-          <h2>Where strategy meets execution.</h2>
-        </div>
-        <div class="timeline-grid">
-          <article class="timeline-card glass-card tilt-card">
-            <p class="card-label">2024 — Present</p>
-            <h3>Lead AI Engineer</h3>
-            <p>Building intelligent workflow systems and cinematic user interfaces for advanced product teams.</p>
-          </article>
-          <article class="timeline-card glass-card tilt-card">
-            <p class="card-label">2022 — 2024</p>
-            <h3>Senior Frontend Engineer</h3>
-            <p>Delivered immersive web experiences, design systems, and conversion-focused product surfaces.</p>
-          </article>
-          <article class="timeline-card glass-card tilt-card">
-            <p class="card-label">2020 — 2022</p>
-            <h3>Product Developer</h3>
-            <p>Crafted performant, scalable interfaces for AI-first products and startup ecosystems.</p>
-          </article>
-        </div>
-      </section>
+            <div class="skills-track-container">
+                <div class="skills-grid" style="grid-template-columns: repeat(3, 1fr);">
 
-      <section id="projects" class="section">
-        <div class="section-heading">
-          <p class="eyebrow">Projects</p>
-          <h2>Flagship work with depth and clarity.</h2>
-        </div>
-        <div class="project-grid">
-          <article class="project-card glass-card tilt-card">
-            <div class="project-media media-a"></div>
-            <div class="project-body">
-              <div class="project-topline">
-                <h3>Nova AI Studio</h3>
-                <span>AI Product</span>
-              </div>
-              <p>An adaptive workspace where prompts, automation, and design flow into a single premium experience.</p>
-              <div class="chip-row">
-                <span>Three.js</span>
-                <span>Node</span>
-                <span>OpenAI</span>
-              </div>
-              <div class="project-actions">
-                <a href="#">GitHub</a>
-                <a href="#">Live Demo</a>
-              </div>
+                    <!-- Frontend -->
+                    <div class="skill-card glass-card" data-tilt data-tilt-max="5">
+                        <i class="ph ph-layout"></i>
+                        <span>Frontend</span>
+                        <div class="skill-tags">
+                            <span class="glass-tag">React.js</span>
+                            <span class="glass-tag">HTML</span>
+                            <span class="glass-tag">CSS</span>
+                            <span class="glass-tag">JavaScript</span>
+                            <span class="glass-tag">Tailwind CSS</span>
+                            <span class="glass-tag">Bootstrap</span>
+                        </div>
+                    </div>
+
+                    <!-- Backend & Database -->
+                    <div class="skill-card glass-card" data-tilt data-tilt-max="5">
+                        <i class="ph ph-database"></i>
+                        <span>Backend & Database</span>
+                        <div class="skill-tags">
+                            <span class="glass-tag">Node.js</span>
+                            <span class="glass-tag">Express.js</span>
+                            <span class="glass-tag">MongoDB</span>
+                            <span class="glass-tag">Firebase</span>
+                            <span class="glass-tag">MySQL</span>
+                        </div>
+                    </div>
+
+                    <!-- Programming Languages -->
+                    <div class="skill-card glass-card" data-tilt data-tilt-max="5">
+                        <i class="ph ph-terminal-window"></i>
+                        <span>Programming</span>
+                        <div class="skill-tags">
+                            <span class="glass-tag">Java</span>
+                            <span class="glass-tag">JavaScript</span>
+                            <span class="glass-tag">Python</span>
+                        </div>
+                    </div>
+
+                    <!-- Tools -->
+                    <div class="skill-card glass-card" data-tilt data-tilt-max="5">
+                        <i class="ph ph-wrench"></i>
+                        <span>Tools</span>
+                        <div class="skill-tags">
+                            <span class="glass-tag">Git</span>
+                            <span class="glass-tag">GitHub</span>
+                            <span class="glass-tag">VS Code</span>
+                            <span class="glass-tag">Postman</span>
+                            <span class="glass-tag">Vercel</span>
+                            <span class="glass-tag">Antigravity</span>
+                            <span class="glass-tag">Android Studio</span>
+                        </div>
+                    </div>
+
+                    <!-- Soft Skills -->
+                    <div class="skill-card glass-card" data-tilt data-tilt-max="5" style="grid-column: span 2;">
+                        <i class="ph ph-chat-centered-text"></i>
+                        <span>Soft Skills</span>
+                        <div class="skill-tags">
+                            <span class="glass-tag">Leadership</span>
+                            <span class="glass-tag">Problem Solving</span>
+                            <span class="glass-tag">Communication</span>
+                            <span class="glass-tag">Critical Thinking</span>
+                            <span class="glass-tag">Adaptability</span>
+                            <span class="glass-tag">Time Management</span>
+                            <span class="glass-tag">Teamwork</span>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </article>
-          <article class="project-card glass-card tilt-card">
-            <div class="project-media media-b"></div>
-            <div class="project-body">
-              <div class="project-topline">
-                <h3>Orbital Commerce</h3>
-                <span>Commerce Experience</span>
-              </div>
-              <p>A luxury e-commerce interface engineered for immersive browsing and conversion uplift.</p>
-              <div class="chip-row">
-                <span>Vanilla JS</span>
-                <span>CSS3</span>
-                <span>WebGL</span>
-              </div>
-              <div class="project-actions">
-                <a href="#">GitHub</a>
-                <a href="#">Live Demo</a>
-              </div>
+        </section>
+
+        <!-- Experience & Internships Section -->
+        <section id="experience" class="section">
+            <div class="section-header">
+                <h2 class="section-title">My <span class="gradient-text">Experience</span></h2>
+                <p class="section-subtitle">Internships, roles, and certifications.</p>
             </div>
-          </article>
-          <article class="project-card glass-card tilt-card">
-            <div class="project-media media-c"></div>
-            <div class="project-body">
-              <div class="project-topline">
-                <h3>Signal Atlas</h3>
-                <span>Data Intelligence</span>
-              </div>
-              <p>A visual analytics platform that transforms large datasets into lucid, cinematic dashboards.</p>
-              <div class="chip-row">
-                <span>React</span>
-                <span>D3</span>
-                <span>Python</span>
-              </div>
-              <div class="project-actions">
-                <a href="#">GitHub</a>
-                <a href="#">Live Demo</a>
-              </div>
+
+            <div class="projects-grid">
+
+                <!-- Experience -->
+                <div class="glass-card hover-lift" style="padding: 2rem;">
+                    <i class="ph ph-briefcase"
+                        style="font-size: 2rem; color: var(--accent-blue); margin-bottom: 1rem;"></i>
+                    <h3 style="font-size: 1.5rem; margin-bottom: 0.5rem;">Technical Team Member</h3>
+                    <p style="color: var(--accent-cyan); margin-bottom: 1rem; font-family: var(--font-accent);">TechAlfa
+                    </p>
+                    <p class="about-text" style="font-size: 0.95rem;">Contributing as part of the technical team,
+                        collaborating on projects, and ensuring high-quality technical deliverables.</p>
+                </div>
+
+                <!-- Internship 1 -->
+                <div class="glass-card hover-lift" style="padding: 2rem;">
+                    <i class="ph ph-android-logo"
+                        style="font-size: 2rem; color: var(--accent-purple); margin-bottom: 1rem;"></i>
+                    <h3 style="font-size: 1.5rem; margin-bottom: 0.5rem;">Android App Development Intern</h3>
+                    <p style="color: var(--accent-cyan); margin-bottom: 1rem; font-family: var(--font-accent);">R T Soft
+                        Solution</p>
+                    <p class="about-text" style="font-size: 0.95rem;">Gained hands-on experience in building Android
+                        applications, implementing user interfaces, and learning app development lifecycle.</p>
+                </div>
+
+                <!-- Internship 2 -->
+                <div class="glass-card hover-lift" style="padding: 2rem;">
+                    <i class="ph ph-file-code"
+                        style="font-size: 2rem; color: var(--accent-pink); margin-bottom: 1rem;"></i>
+                    <h3 style="font-size: 1.5rem; margin-bottom: 0.5rem;">Python Development Intern</h3>
+                    <p style="color: var(--accent-cyan); margin-bottom: 1rem; font-family: var(--font-accent);">WideSoft
+                        Tech</p>
+                    <p class="about-text" style="font-size: 0.95rem;">Developed and optimized Python-based solutions,
+                        and strengthened backend logic and scripting abilities.</p>
+                </div>
+
+                <!-- Certifications -->
+                <div class="glass-card hover-lift" style="padding: 2rem;">
+                    <i class="ph ph-certificate" style="font-size: 2rem; color: #f59e0b; margin-bottom: 1rem;"></i>
+                    <h3 style="font-size: 1.5rem; margin-bottom: 0.5rem;">IBM AI Fundamentals</h3>
+                    <p style="color: var(--accent-cyan); margin-bottom: 1rem; font-family: var(--font-accent);">
+                        Certification</p>
+                    <p class="about-text" style="font-size: 0.95rem;">Successfully completed the IBM AI Fundamentals
+                        certification, learning core concepts of Artificial Intelligence and Machine Learning.</p>
+                </div>
             </div>
-          </article>
-        </div>
-      </section>
+        </section>
 
-      <section id="hackathons" class="section">
-        <div class="section-heading">
-          <p class="eyebrow">Hackathons</p>
-          <h2>Built under pressure, polished with purpose.</h2>
-        </div>
-        <div class="hack-grid">
-          <div class="numbers-card glass-card tilt-card">
-            <h3>20+</h3>
-            <p>Hackathons, sprints, and innovation challenges</p>
-          </div>
-          <div class="hack-card glass-card tilt-card">
-            <p class="card-label">Winner • AI for Good</p>
-            <h3>Adaptive well-being assistant</h3>
-            <p>Generated a thoughtful companion experience combining voice interfaces and open-source models.</p>
-          </div>
-          <div class="hack-card glass-card tilt-card">
-            <p class="card-label">Finalist • Climate Tech</p>
-            <h3>Urban energy intelligence</h3>
-            <p>Designed a predictive platform to surface energy savings patterns across real-time sensor data.</p>
-          </div>
-        </div>
-      </section>
+        <!-- Projects Section -->
+        <section id="projects" class="section">
+            <div class="section-header">
+                <h2 class="section-title">My <span class="gradient-text">Projects</span></h2>
+                <p class="section-subtitle">Real-world applications I've built.</p>
+            </div>
 
-      <section id="skills" class="section">
-        <div class="section-heading">
-          <p class="eyebrow">Skills</p>
-          <h2>Elegant systems, precise execution.</h2>
-        </div>
-        <div class="skill-grid">
-          <article class="skill-card glass-card tilt-card">
-            <h3>UI Engineering</h3>
-            <p>Motion systems, micro-interactions, polished front-end architecture.</p>
-            <div class="progress"><span style="width: 95%"></span></div>
-          </article>
-          <article class="skill-card glass-card tilt-card">
-            <h3>AI Integration</h3>
-            <p>Model orchestration, embeddings, product workflows, and agent experiences.</p>
-            <div class="progress"><span style="width: 92%"></span></div>
-          </article>
-          <article class="skill-card glass-card tilt-card">
-            <h3>Full Stack</h3>
-            <p>Secure APIs, scalable backends, and seamless deployment pipelines.</p>
-            <div class="progress"><span style="width: 90%"></span></div>
-          </article>
-          <article class="skill-card glass-card tilt-card">
-            <h3>Design Systems</h3>
-            <p>High-fidelity component libraries, accessibility, and visual harmony.</p>
-            <div class="progress"><span style="width: 88%"></span></div>
-          </article>
-        </div>
-      </section>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card glass-card" data-tilt data-tilt-max="2" data-tilt-perspective="1500"
+                    data-tilt-glare="false">
+                    <div class="project-image-wrapper">
+                        <div class="project-mockup">
+                            <div class="mockup-header"><span class="dot"></span><span class="dot"></span><span
+                                    class="dot"></span></div>
+                            <div class="mockup-body placeholder-img">BridgeAI</div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">BridgeAI</h3>
+                        <p class="project-desc">AI platform for student skill enhancement and placement readiness.</p>
+                    </div>
+                </div>
 
-      <section id="achievements" class="section">
-        <div class="section-heading">
-          <p class="eyebrow">Achievements</p>
-          <h2>Recognition shaped by relentless craft.</h2>
-        </div>
-        <div class="achievement-row">
-          <article class="glass-card achievement-card tilt-card">
-            <h3>Community Speaker</h3>
-            <p>Led sessions on modern AI experiences and product engineering.</p>
-          </article>
-          <article class="glass-card achievement-card tilt-card">
-            <h3>Open Source Contributor</h3>
-            <p>Contributed libraries and tooling that help developers ship faster.</p>
-          </article>
-          <article class="glass-card achievement-card tilt-card">
-            <h3>Mentor</h3>
-            <p>Guided emerging builders through product, design, and implementation.</p>
-          </article>
-        </div>
-      </section>
+                <!-- Project 2 -->
+                <div class="project-card glass-card" data-tilt data-tilt-max="2" data-tilt-perspective="1500"
+                    data-tilt-glare="false">
+                    <div class="project-image-wrapper">
+                        <div class="project-mockup">
+                            <div class="mockup-header"><span class="dot"></span><span class="dot"></span><span
+                                    class="dot"></span></div>
+                            <div class="mockup-body placeholder-img">Adhikar.AI</div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Adhikar.AI</h3>
+                        <p class="project-desc">AI-powered solution designed to provide user-centric services.</p>
+                    </div>
+                </div>
 
-      <section id="community" class="section">
-        <div class="section-heading">
-          <p class="eyebrow">CodeX Community</p>
-          <h2>Building a space where curiosity becomes momentum.</h2>
-        </div>
-        <div class="community-card glass-card tilt-card">
-          <div>
-            <p class="mini-label">Mission</p>
-            <h3>We create a high-trust hub for builders, creators, and ambitious learners.</h3>
-          </div>
-          <div class="community-stats">
-            <div><strong>5k+</strong><span>Members</span></div>
-            <div><strong>40+</strong><span>Sessions</span></div>
-            <div><strong>12</strong><span>Workshops</span></div>
-          </div>
-        </div>
-      </section>
+                <!-- Project 3 -->
+                <div class="project-card glass-card" data-tilt data-tilt-max="2" data-tilt-perspective="1500"
+                    data-tilt-glare="false">
+                    <div class="project-image-wrapper">
+                        <div class="project-mockup">
+                            <div class="mockup-header"><span class="dot"></span><span class="dot"></span><span
+                                    class="dot"></span></div>
+                            <div class="mockup-body placeholder-img">Portfolio Website</div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Portfolio Website</h3>
+                        <p class="project-desc">My personal portfolio website (The one you are viewing right now).</p>
+                    </div>
+                </div>
 
-      <section id="contact" class="section">
-        <div class="contact-card glass-card tilt-card">
-          <div>
-            <p class="eyebrow">Contact</p>
-            <h2>Let’s create something unforgettable.</h2>
-            <p>Available for product builds, AI experiences, and high-end design collaborations.</p>
-          </div>
-          <form class="contact-form">
-            <input type="text" placeholder="Name" />
-            <input type="email" placeholder="Email" />
-            <textarea rows="4" placeholder="Project idea"></textarea>
-            <button class="btn btn-primary" type="submit">Send inquiry</button>
-          </form>
-        </div>
-      </section>
+                <!-- Project 4 -->
+                <div class="project-card glass-card" data-tilt data-tilt-max="2" data-tilt-perspective="1500"
+                    data-tilt-glare="false">
+                    <div class="project-image-wrapper">
+                        <div class="project-mockup">
+                            <div class="mockup-header"><span class="dot"></span><span class="dot"></span><span
+                                    class="dot"></span></div>
+                            <div class="mockup-body placeholder-img">ERP Website</div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">ERP Based Departmental Website</h3>
+                        <p class="project-desc">A departmental ERP website for managing departmental resources and
+                            activities.</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- CodeX Community Section -->
+        <section id="codex" class="section">
+            <div class="codex-banner glass-card glow-border">
+                <div class="codex-content">
+                    <div class="badge glass-badge"><i class="ph ph-users"></i> Community</div>
+                    <h2 class="section-title">CodeX <span class="gradient-text">Community</span></h2>
+                    <p class="about-text">
+                        I am the Team Leader and Founder of CodeX Community. We host workshops and events, bringing
+                        developers together to learn and build new things.
+                    </p>
+                    <div class="stats-grid codex-stats">
+                        <div class="stat-card glass-card">
+                            <h4 class="stat-num">15+</h4>
+                            <p class="stat-label">Members</p>
+                        </div>
+                        <div class="stat-card glass-card">
+                            <h4 class="stat-num">5</h4>
+                            <p class="stat-label">Events</p>
+                        </div>
+                        <div class="stat-card glass-card">
+                            <h4 class="stat-num">5</h4>
+                            <p class="stat-label">Workshops</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="codex-visual">
+                    <!-- Abstract representation without heavy 3d -->
+                    <div class="network-nodes" style="opacity: 0.6;">
+                        <i class="ph ph-users-three"
+                            style="font-size: 150px; color: var(--accent-cyan); filter: drop-shadow(0 0 20px var(--accent-cyan));"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <div class="section-header centered">
+                <h2 class="section-title">Let's <span class="gradient-text">Connect</span></h2>
+                <p class="section-subtitle">Have a project in mind or just want to say hi?</p>
+            </div>
+
+            <div class="contact-container glass-card glow-border hover-lift">
+                <form class="contact-form">
+                    <div class="form-group glass-input-group">
+                        <input type="text" id="name" placeholder="Your Name" required class="glass-input">
+                        <div class="input-glow"></div>
+                    </div>
+                    <div class="form-group glass-input-group">
+                        <input type="email" id="email" placeholder="Your Email" required class="glass-input">
+                        <div class="input-glow"></div>
+                    </div>
+                    <div class="form-group glass-input-group">
+                        <textarea id="message" rows="5" placeholder="Your Message" required
+                            class="glass-input"></textarea>
+                        <div class="input-glow"></div>
+                    </div>
+                    <button type="submit" class="btn btn-primary magnetic" style="width: 100%;">Send Message <i
+                            class="ph ph-paper-plane-right"></i></button>
+                </form>
+
+                <div class="contact-info">
+                    <h3 class="contact-heading">Reach Out</h3>
+                    <p class="contact-text">I'm currently available for freelance work and new opportunities.</p>
+
+                    <div class="social-links">
+                        <a href="https://github.com/LEKHTEMBHARE" target="_blank" rel="noopener noreferrer" class="social-icon magnetic glass-card"><i class="ph ph-github-logo"></i></a>
+                        <a href="https://www.linkedin.com/in/lekh-tembhare" target="_blank" rel="noopener noreferrer" class="social-icon magnetic glass-card"><i class="ph ph-linkedin-logo"></i></a>
+                        <a href="#" class="social-icon magnetic glass-card"><i class="ph ph-twitter-logo"></i></a>
+                    </div>
+
+                    <div class="contact-email">
+                        <i class="ph ph-envelope-simple"></i> lekhtembhare@gmail.com
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
-    <footer class="footer">
-      <p>© 2026 Lekh Tembhare. Crafted with intention.</p>
-      <div class="footer-links">
-        <a href="https://github.com" target="_blank" rel="noreferrer">GitHub</a>
-        <a href="https://linkedin.com" target="_blank" rel="noreferrer">LinkedIn</a>
-      </div>
+    <footer class="glass-footer">
+        <div class="footer-content">
+            <p>&copy; <span id="year"></span> Lekh Tembhare. All rights reserved.</p>
+            <p>Designed with <i class="ph ph-heart" style="color: var(--pink)"></i> & built with caffeine.</p>
+        </div>
     </footer>
 
+    <!-- Libraries - only those requested to be optimized/kept lightweight (No heavy processing) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.27/bundled/lenis.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js"></script>
+
     <script src="script.js"></script>
-  </body>
+</body>
+
 </html>
